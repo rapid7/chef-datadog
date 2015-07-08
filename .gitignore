@@ -1,13 +1,13 @@
 # bundler
 .bundle
-Gemfile*.lock
+#Gemfile*.lock
 
 # For MacOS:
 .DS_Store
 
 # For Ruby Managers
 .rbenv-version
-.ruby-version
+#.ruby-version
 .ruby-gemset
 .rvmrc
 
@@ -29,7 +29,7 @@ Gemfile*.lock
 # Berkshelf
 Berksfile.lock
 cookbooks/
-/.ruby-version
+#/.ruby-version
 
 # Test-Kitchen
 .kitchen/

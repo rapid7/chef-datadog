@@ -1,26 +1,16 @@
-# -*- encoding: utf-8 -*-
 source 'https://rubygems.org'
+ruby '2.1.5'
 
-group :development do
-  gem 'emeril', '~> 0.8.0'
-  gem 'guard', '>= 2.6'
-  gem 'guard-foodcritic', '~> 1.0.3'
-  gem 'guard-kitchen'
-  gem 'guard-rspec'
-  gem 'guard-rubocop', '>= 1.1'
-end
+# gem install bundler -v 1.7.15
+gem 'builderator', :github => 'rapid7/builderator',
+                   :tag => '0.3.5'
 
-group :test do
-  gem 'berkshelf', '~> 3.1'
-  gem 'chefspec', '~> 4.2'
-  gem 'coveralls', '~> 0.7.1', require: false
-  gem 'foodcritic', '~> 4.0.0'
-  gem 'rake', '>= 10.2'
-  gem 'rubocop', '= 0.28.0'
-end
+gem 'vagrant', :github => 'mitchellh/vagrant',
+               :tag => 'v1.7.2',
+               :group => :development
 
-group :integration do
-  gem 'kitchen-vagrant'
-  gem 'test-kitchen', '~> 1.3.1'
-  gem 'travis-lint'
+group :development, :plugins do
+  gem 'vagrant-aws'
+  gem 'vagrant-omnibus'
+  gem 'vagrant-secret'
 end
