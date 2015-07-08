@@ -1,5 +1,5 @@
-# -*- encoding: utf-8 -*-
 source 'https://rubygems.org'
+ruby '2.1.5'
 
 group :development do
   gem 'emeril', '~> 0.8.0'
@@ -26,4 +26,17 @@ group :integration do
   gem 'travis-lint'
   gem 'serverspec'
   gem 'winrm-transport'
+end
+
+# gem install bundler -v 1.7.15
+gem 'builderator', '~> 0.0'
+
+gem 'vagrant', :github => 'mitchellh/vagrant',
+               :tag => 'v1.7.4',
+               :group => :development
+
+group :plugins do
+  gem 'vagrant-aws'
+  gem 'vagrant-omnibus'
+  gem 'vagrant-secret'
 end
