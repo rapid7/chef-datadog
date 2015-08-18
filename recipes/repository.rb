@@ -26,7 +26,7 @@ when 'debian'
   end
 
   apt_repository 'datadog' do
-    keyserver 'hkp://keyserver.ubuntu.com:80'
+    keyserver 'keyserver.ubuntu.com'
     key 'C7A7DA52'
     uri node['datadog']['aptrepo']
     distribution node['datadog']['aptrepo_dist']
