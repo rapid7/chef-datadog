@@ -10,7 +10,7 @@ group :development do
 end
 
 group :test do
-  gem 'berkshelf', '~> 4.0.1'
+  # gem 'berkshelf', '~> 4.0.1'
   gem 'chefspec', '~> 4.4.0'
   gem 'coveralls', '~> 0.8.3', require: false
   gem 'foodcritic', '~> 5.0.0'
