@@ -30,6 +30,7 @@ end
 
 # gem install bundler -v 1.7.15
 gem 'builderator', '~> 0.0'
+gem 'faraday_middleware', '~> 0.10.0'
 
 # gem 'vagrant', :github => 'mitchellh/vagrant',
 #                :tag => 'v1.7.4',
